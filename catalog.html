@@ -17,46 +17,58 @@
       </nav>
     </header>
     <main>
+      <form action="" method="get">
+        <fieldset action="" method="get">
+          <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" id="parking">
+                <label for="parking">Праковка</label>
+              </li>
+              <li>
+                <input type="checkbox" id="wifi">
+                <label for="wifi">WI-FI</label>
+              </li>
+            </ul>
+       </fieldset>
+       <fieldset action="" method="get">
+           <legend>Тип жилья:</legend>
+             <ul>
+               <li>
+                 <input type="checkbox" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="apartments" checked>
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+       </fieldset>
+       <fieldset action="" method="get">
+           <legend>Стоимость в сутки:</legend>
+           <input type="range" min="0" max="3000" step="1" value="1500">
+       </fieldset>
+      </form>
       <section>
-          <form action="catalog.html" method="post">
-            <p>Инфраструктура:</p>
-            <input type="checkbox" id="pool" checked>
-            <label for="pool">Бассейн</label>
-            <input type="checkbox" id="parking">
-            <label for="parking">Праковка</label>
-            <input type="checkbox" id="wifi">
-            <label for="wifi">WI-FI</label>
-          </form>
-          <form action="catalog.html" method="post">
-            <p>Тип жилья:</p>
-            <input type="checkbox" id="hotel" checked>
-            <label for="hotel">Гостиница</label>
-            <input type="checkbox" id="motel" checked>
-            <label for="motel">Мотель</label>
-            <input type="checkbox" id="apartments" checked>
-            <label for="apartments">Апартаменты</label>
-          </form>
-          <form action="catalog.html" method="post">
-            <p>Стоимость в сутки:</p>
-            <p>от 0</p>
-            <p>до 3000</p>
-            <input type="range" min="0" max="3000" step="1" value="1500">
-          </form>
-      </section>
-      <section>
-        <p>Найдено: 3</p>
+        <h2>Найдено:3</h2>
         <p>Сортировка:</p>
         <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По рейтингу</li>
+          <li><a href="">По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По рейтингу</a></li>
         </ul>
-        <span>
-          <img src=""/>
-        </span>
-        <span>
-          <img src=""/>
-        </span>
+        <ul>
+          <li><a href=""><img src="1.svg"></a></li>
+          <li><a href=""><img src="2.svg"></a></li>
+        </ul>
       </section>
       <section>
         <ul>
