@@ -18,7 +18,7 @@
     </header>
     <main>
       <form action="" method="get">
-        <fieldset action="" method="get">
+        <fieldset>
           <legend>Инфраструктура:</legend>
             <ul>
               <li>
@@ -35,7 +35,7 @@
               </li>
             </ul>
        </fieldset>
-       <fieldset action="" method="get">
+       <fieldset>
            <legend>Тип жилья:</legend>
              <ul>
                <li>
@@ -52,13 +52,18 @@
               </li>
             </ul>
        </fieldset>
-       <fieldset action="" method="get">
+       <fieldset>
            <legend>Стоимость в сутки:</legend>
-           <input type="range" min="0" max="3000" step="1" value="1500">
+             <label for="price-min">от</label>
+             <input id="price-min" type="text" value="0">
+             <label for="price-max">до</label>
+             <input id="price-max" type="text" value="3000">
+             <input type="range" min="0" max="3000" step="1" value="1500">
+             <button type="button">Показать</button>
        </fieldset>
       </form>
       <section>
-        <h2>Найдено:3</h2>
+        <h2>Найдено: 3</h2>
         <p>Сортировка:</p>
         <ul>
           <li><a href="">По цене</a></li>
