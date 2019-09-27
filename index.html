@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <a href="index.html"><img src="img/logo-sedona.svg" width="143" height="71" alt="Логотип Седона"/></a>
+        <a href="index.html"><img src="img/logo-sedona.svg" width="143" height="71" alt="Логотип Седона"></a>
         <ul>
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
@@ -18,81 +18,85 @@
     </header>
     <main>
       <intro>
-        <img src="img/intro-welcome.svg" width="458" height="352"/>
-        <img src="img/background-photo.jpg" width="1200" height="800"/>
+        <img src="img/intro-welcome.svg" width="458" height="352" alt="Логотип сайта">
+        <img src="img/background-photo.jpg" width="1200" height="800" alt="Фоновое изображение">
       </intro>
       <section>
-        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="visually-hidden">Сайт города Седона</h1>
+        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <img src="img/background-shape.png" width="1200" height="57"/>
+        <img src="img/background-shape.png" width="1200" height="57">
       </section>
       <section>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ol>
           <li>
-            <h2>Настоящий  городок </h2>
+            <h3>Настоящий  городок </h3>
             <p>№1</p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/background-1.jpg" width="800" height="401">
+            <img src="img/background-1.jpg" width="800" height="401" alt="Изображение города">
           </li>
           <li>
             <ul>
               <li>
-                <h3>Жильё</h3>
-                <img src="img/icon-1.svg" width="75" height="72">
+                <h4>Жильё</h4>
+                <img src="img/icon-1.svg" width="75" height="72" alt="Иконка «дом»">
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li>
-                <h3>Еда  </h3>
-                <img src="img/icon-2.svg" width="75" height="70">
+                <h4>Еда  </h4>
+                <img src="img/icon-2.svg" width="75" height="70" alt="Иконка «бургер»">
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li>
-                <h3>Сувениры  </h3>
-                <img src="img/icon-3.svg" width="64" height="77">
+                <h4>Сувениры  </h4>
+                <img src="img/icon-3.svg" width="64" height="77" alt="Иконка «подарок»">
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li>
-            <img src="img/background-2.jpg" width="800" height="400">
-            <h2>Там есть  Мост дьявола</h2>
+            <h3>Там есть  Мост дьявола</h3>
             <p>№2</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <img src="img/background-2.jpg" width="800" height="400" alt="Изображение каньона">
           </li>
           <li>
-            <h2>Небольшая  площадь </h2>
+            <h3>Небольшая  площадь </h3>
             <p>№3</p>
             <p>Все достопримечательности  находятся очень близко</p>
           </li>
           <li>
-            <h2>Красивая  дорога </h2>
+            <h3>Красивая  дорога </h3>
             <p>№4</p>
             <p>Ехать в Седону из Лас-Вегаса совсем  не скучно!</p>
           </li>
           <li>
-            <h2>Мало  туристов </h2>
+            <h3>Мало  туристов </h3>
             <p>№5</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </section>
       <section>
-        <h2>Заинтересовались? </h2>
+        <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+        <p>Заинтересовались? </p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне </p>
         <button type="button">Поиск гостиницы в Седоне</button>
         <form action="index.html" method="post">
           <p>
             <label for="checkin">Дата заезда</label>
-            <input type="date" name="checkin"/>
+            <input id="checkin" type="date" name="checkin">
             <br>
             <label for="checkout">Дата выезда</label>
-            <input type="date" name="checkout"/>
+            <input id="checkout" type="date" name="checkout">
             <br>
             <label for="adults">Взрослые</label>
-            <input type="text" name="adults"/>
+            <input id="adults" type="text" name="adults">
             <br>
             <label for="children">Дети</label>
-            <input type="text" name="children"/>
+            <input id="children" type="text" name="children">
+            <br>
             <button type="button">Найти</button>
          </p>
         </form>
