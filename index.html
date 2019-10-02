@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a href="index.html"><img src="img/logo-sedona.svg" width="143" height="71" alt="Логотип Седона"></a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
@@ -23,51 +26,51 @@
       </intro>
       <section>
         <h1 class="visually-hidden">Сайт города Седона</h1>
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <img src="img/background-shape.png" width="1200" height="57">
       </section>
-      <section>
+      <section class="features-list">
         <h2 class="visually-hidden">Преимущества</h2>
         <ol>
-          <li>
+          <li class="feature-item">
             <h3>Настоящий  городок </h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/background-1.jpg" width="800" height="401" alt="Изображение города">
           </li>
           <li>
             <ul>
-              <li>
+              <li class="feature-subitem">
                 <h4>Жильё</h4>
                 <img src="img/icon-1.svg" width="75" height="72" alt="Иконка «дом»">
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li>
+              <li class="feature-subitem">
                 <h4>Еда  </h4>
                 <img src="img/icon-2.svg" width="75" height="70" alt="Иконка «бургер»">
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li>
+              <li class="feature-subitem">
                 <h4>Сувениры  </h4>
                 <img src="img/icon-3.svg" width="64" height="77" alt="Иконка «подарок»">
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Там есть  Мост дьявола</h3>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             <img src="img/background-2.jpg" width="800" height="400" alt="Изображение каньона">
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Небольшая  площадь </h3>
             <p>Все достопримечательности  находятся очень близко</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Красивая  дорога </h3>
             <p>Ехать в Седону из Лас-Вегаса совсем  не скучно!</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Мало  туристов </h3>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -75,10 +78,10 @@
       </section>
       <section>
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-        <p>Заинтересовались? </p>
+        <p class="title">Заинтересовались? </p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне </p>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <form action="index.html" method="post">
+        <button type="button" class="button-brown">Поиск гостиницы в Седоне</button>
+        <form action="index.html" method="post" display: none>
           <p>
             <label for="checkin">Дата заезда</label>
             <input id="checkin" type="date" name="checkin">
@@ -92,18 +95,18 @@
             <label for="children">Дети</label>
             <input id="children" type="text" name="children">
             <br>
-            <button type="button">Найти</button>
+            <button type="button" class="button-blue">Найти</button>
          </p>
         </form>
         <img src="img/map.jpg" width="1202" height="597" alt="Карта">
       </section>
     </main>
     <footer>
-        <p>#VISITSEDONA</p>
+        <p class="subtitle">#VISITSEDONA</p>
         <ul>
-          <li><a href=""><img src="img/twitter.svg" width="17" height="17" alt="Twitter"></a></li>
-          <li><a href=""><img src="img/facebook.svg" width="20" height="22" alt="Facebook"></a></li>
-          <li><a href=""><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+          <li><a href="" class="button-blue"><img src="img/twitter.svg" width="17" height="17" alt="Twitter"></a></li>
+          <li><a href="" class="button-blue"><img src="img/facebook.svg" width="20" height="22" alt="Facebook"></a></li>
+          <li><a href="" class="button-blue"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
         </ul>
         <p>Website by:</p>
         <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>

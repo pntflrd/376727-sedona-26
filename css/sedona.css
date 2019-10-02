@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81B3D2;
+
+  background-color: #ffffff;
+}
+
+.site-navigation a:focus {
+  color: #000000;
+  opacity: 0.3;
+
+  background-color: #ffffff;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3,
+.feature-subitem h4 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.title {
+ font-size: 30px;
+ line-height: 24px;
+ font-weight: 700;
+ color: #000000;
+}
+
+ .subtitle {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.button-blue {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-blue:hover {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  opacity: 0.3;
+
+  background-color: #5496bd;
+}
+
+.button-brown {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+
+  background-color: #766357;
+  border: none;
+}
+
+.button-brown:hover {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  opacity: 0.3;
+
+  background-color: #503e33;
+}
+
+.catalog-item-type,
+.catalog-item-price {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.catalog-item-rating {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+
+  background-color: #f2f2f2;
+  padding: 6px 16px 6px 16px;
+}
