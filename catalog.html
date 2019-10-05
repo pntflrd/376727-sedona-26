@@ -29,15 +29,15 @@
             <ul>
               <li>
                 <input id="pool" type="checkbox" name="pool" checked>
-                <label for="pool">Бассейн</label>
+                <label for="pool" class="list-item">Бассейн</label>
               </li>
               <li>
                 <input id="parking" type="checkbox" name="parking">
-                <label for="parking">Праковка</label>
+                <label for="parking" class="list-item">Праковка</label>
               </li>
               <li>
                 <input id="wifi" type="checkbox" name="wifi">
-                <label for="wifi">WI-FI</label>
+                <label for="wifi" class="list-item">WI-FI</label>
               </li>
             </ul>
        </fieldset>
@@ -46,38 +46,38 @@
              <ul>
                <li>
                  <input id="hotel" type="checkbox" name="hotel" checked>
-                  <label for="hotel">Гостиница</label>
+                  <label for="hotel" class="list-item">Гостиница</label>
               </li>
               <li>
                 <input id="motel" type="checkbox" name="motel" checked>
-                <label for="motel">Мотель</label>
+                <label for="motel" class="list-item">Мотель</label>
               </li>
               <li>
                 <input id="apartments" type="checkbox" name="apartments" checked>
-                <label for="apartments">Апартаменты</label>
+                <label for="apartments" class="list-item">Апартаменты</label>
               </li>
             </ul>
        </fieldset>
        <fieldset>
            <legend>Стоимость в сутки:</legend>
-             <label for="price-min">от</label>
+             <label for="price-min" class="list-item">от</label>
              <input id="price-min" type="text" name="price-min" value="0">
-             <label for="price-max">до</label>
+             <label for="price-max" class="list-item">до</label>
              <input id="price-max" type="text" name="price-max" value="3000">
              <input type="range" min="0" max="3000" step="1" value="1500">
-             <button type="button">Показать</button>
+             <button type="button" class="button-transparent list-item">Показать</button>
        </fieldset>
        <img src="filter-background.jpg" width="1200" height="217" alt="Фоновое изображение">
       </form>
       </section>
       <section>
-        <h2>Результаты поиска</h2>
-        <p>Найдено: 3</p>
-        <p>Сортировка:</p>
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <p class="subtitle">Найдено: 3</p>
+        <p class="note-text">Сортировка:</p>
         <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По рейтингу</a></li>
+          <li><a href="" class="note-text link-text">По цене</a></li>
+          <li><a href="" class="note-text link-text">По типу</a></li>
+          <li><a href="" class="note-text link-text">По рейтингу</a></li>
         </ul>
         <ul>
           <li><a href=""><img src="img/icon-up.svg"></a></li>
@@ -86,33 +86,33 @@
         <ul class="features-list">
           <li>
             <h2 class="subtitle catalog-item-name">Amara Resort & Spa</h2>
-            <p class="catalog-item catalog-item-type">Гостиница</p>
-            <p class="catalog-item catalog-item-price">От 4000 Р.</p>
+            <p class="list-item catalog-item catalog-item-type">Гостиница</p>
+            <p class="list-item catalog-item catalog-item-price">От 4000 Р.</p>
             <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
             <a href="" class="button button-blue">Подробнее</a>
             <a href="" class="button button-brown">Забронировать</a>
             <p>Рейтинг: 5 звезд</p>
-            <p class="catalog-item catalog-item-rating">Рейтинг: 8,5</p>
+            <p class="list-item catalog-item catalog-item-rating">Рейтинг: 8,5</p>
           </li>
           <li>
             <h2 class="subtitle catalog-item-name">Desert Quail Inn</h2>
-            <p class="catalog-item catalog-item-type">Мотель</p>
-            <p class="catalog-item catalog-item-price">От 3000 Р.</p>
+            <p class="list-item catalog-item catalog-item-type">Мотель</p>
+            <p class="list-item catalog-item catalog-item-price">От 3000 Р.</p>
             <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
             <a href="" class="button button-blue">Подробнее</a>
             <a href="" class="button button-brown">Забронировать</a>
             <p>Рейтинг: 3 звезды</p>
-            <p class="catalog-item catalog-item-rating">Рейтинг: 8,9</p>
+            <p class="list-item catalog-item-rating">Рейтинг: 8,9</p>
           </li>
           <li>
             <h2 class="subtitle catalog-item-name">Villas at Poco Diablo</h2>
-            <p class="catalog-item catalog-item-type">Апертаменты</p>
-            <p class="catalog-item catalog-item-price">От 2000 Р.</p>
+            <p class="list-item catalog-item catalog-item-type">Апертаменты</p>
+            <p class="list-item catalog-item catalog-item-price">От 2000 Р.</p>
             <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             <a href="" class="button button-blue">Подробнее</a>
             <a href="" class="button button-brown"> Забронировать</a>
             <p>Рейтинг: 2 звезды</p>
-            <p class="catalog-item catalog-item-rating">Рейтинг: 9,2</p>
+            <p class="list-item catalog-item catalog-item-rating">Рейтинг: 9,2</p>
           </li>
         </ul>
       </section>

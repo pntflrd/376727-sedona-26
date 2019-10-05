@@ -16,7 +16,8 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
+.main-navigation,
+.input-text {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -67,6 +68,16 @@ a {
   color: #000000;
 }
 
+.note-text {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.link-text {
+  color: #81b3d2;
+}
+
 .button {
   font: inherit;
 
@@ -111,10 +122,31 @@ a {
   background-color: #503e33;
 }
 
-.catalog-item  {
+.button-transparent {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+}
+
+.button-transparent:hover {
+  color: #000000;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.list-item  {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: #ffffff;
+}
+
+.catalog-item {
   color: #333333;
 }
 
