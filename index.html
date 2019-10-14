@@ -20,21 +20,21 @@
       </nav>
     </header>
     <main>
-      <intro>
+      <section class="intro">
         <img src="img/intro-welcome.svg" width="458" height="352" alt="Логотип сайта">
         <img src="img/background-photo.jpg" width="1200" height="800" alt="Фоновое изображение">
-      </intro>
+      </section>
       <section>
         <h1 class="visually-hidden">Сайт города Седона</h1>
         <p class="subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <img src="img/background-shape.png" width="1200" height="57">
       </section>
-      <section class="features-list">
+      <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ol>
+        <ol class="features-list">
           <li class="feature-item">
-            <h3 class="subtitle">Настоящий  городок </h3>
+            <h3 class="features-item-subtitle">Настоящий  городок </h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/background-1.jpg" width="800" height="401" alt="Изображение города">
           </li>
@@ -76,27 +76,27 @@
           </li>
         </ol>
       </section>
-      <section>
+      <section class="form">
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
         <p class="title">Заинтересовались? </p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне </p>
-        <button type="button" class="button button-brown">Поиск гостиницы в Седоне</button>
-        <form action="index.html" method="post" display: none>
+        <button type="button" class="button search-button form-button">Поиск гостиницы в Седоне</button>
+        <form action="index.html" method="post" class="visually-hidden">
           <p>
             <label for="checkin" class="input-text">Дата заезда</label>
-            <input id="checkin" type="date" name="checkin">
-            <br>
+            <input id="checkin" type="date" placeholder="24 апреля 2017" name="checkin">
+          </p>
+          <p>
             <label for="checkout" class="input-text">Дата выезда</label>
             <input id="checkout" type="date" name="checkout">
-            <br>
+          </p>
+          <p>
             <label for="adults" class="input-text">Взрослые</label>
-            <input id="adults" type="text" name="adults">
-            <br>
+            <input id="adults" type="text" value="2" name="adults">
             <label for="children" class="input-text">Дети</label>
-            <input id="children" type="text" name="children">
-            <br>
-            <button type="button" class="button button-blue">Найти</button>
-         </p>
+            <input id="children" type="text" value="0" name="children">
+          </p>
+            <button type="button" class="button form-button">Найти</button>
         </form>
         <img src="img/map.jpg" width="1202" height="597" alt="Карта">
       </section>
@@ -104,9 +104,9 @@
     <footer>
         <p class="subtitle">#VISITSEDONA</p>
         <ul>
-          <li><a href="" class="button button-blue"><img src="img/twitter.svg" width="17" height="17" alt="Twitter"></a></li>
-          <li><a href="" class="button button-blue"><img src="img/facebook.svg" width="20" height="22" alt="Facebook"></a></li>
-          <li><a href="" class="button button-blue"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+          <li><a href="" class="button social-button"><img src="img/twitter.svg" width="17" height="17" alt="Twitter"></a></li>
+          <li><a href="" class="button social-button"><img src="img/facebook.svg" width="20" height="22" alt="Facebook"></a></li>
+          <li><a href="" class="button social-button"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
         </ul>
         <p>Website by:</p>
         <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
