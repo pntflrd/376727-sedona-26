@@ -71,6 +71,9 @@ a {
   position: relative;
   width: 138px;
   height: 71px;
+
+  margin-right: 26px;
+
   z-index: 2;
 }
 
@@ -105,7 +108,7 @@ a {
   font-weight: 700;
   color: #000000;
 
-  padding: 16px 57px;
+  padding: 15px 57px;
 }
 
 .site-navigation-link:hover {
@@ -190,20 +193,23 @@ a {
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
+  line-height: 23px;
 }
 
 .features-item-subtitle-secondary {
   margin-bottom: 25px;
   color: #ffffff;
+  line-height: 23px;
 }
 
 .features-item-number {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 }
 
 .features-item-text {
   font-weight: 400;
+  line-height: 20px;
 
   width: 280px;
   margin-top: 0;
@@ -214,9 +220,9 @@ a {
 
 .features-item-long {
   max-width: 400px;
-  padding-top: 43px;
+  padding-top: 45px;
   padding-right: 60px;
-  padding-bottom: 45px;
+  padding-bottom: 56px;
   padding-left: 60px;
 
   background-color: #81B3D2;
@@ -224,10 +230,18 @@ a {
 }
 
 .features-item-short {
-  padding-top: 43px;
+  padding-top: 46px;
   padding-right: 60px;
-  padding-bottom: 45px;
+  padding-bottom: 53px;
   padding-left: 60px;
+}
+
+.features-item-short-subtitle {
+  margin-bottom: 23px;
+}
+
+.features-item-short-text {
+  line-height: 22px;
 }
 
 .features-img-wrap {
@@ -244,14 +258,19 @@ a {
 
 .features-list-subitem-list {
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: space-between;
+  align-items: flex-start;
   list-style: none;
   margin-top: 60px;
   margin-right: 58px;
-  margin-bottom: 66px;
+  margin-bottom: 74px;
   margin-left: 58px;
   padding: 0;
+}
+
+.features-subitem-text {
+  margin: 0;
+  max-width: 300px;
 }
 
 .features-subitem-inner {
@@ -260,11 +279,11 @@ a {
 
 .features-subitem-subtitle {
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 22px;
 }
 
 .features-subitem-icon {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 /* Стили для формы */
@@ -276,12 +295,17 @@ a {
   max-width: 600px;
   box-sizing: content-box;
 
-  margin-top: 55px;
+  margin-top: 58px;
 }
 
 .form-text {
-  margin-top: 38px;
+  margin-top: 35px;
   margin-bottom: 35px;
+}
+
+.form-description {
+  margin: 0;
+  margin-bottom: 47px;
 }
 
 .note-text {
@@ -878,8 +902,8 @@ a {
   max-width: 568px;
   max-height: 395px;
   top: 2169px;
-  left: 349px;
-  right: 349px;
+  left: 356px;
+  right: 356px;
 
   z-index: 2;
 
@@ -919,7 +943,7 @@ a {
 
 .search-form-field-input-long {
   height: 38px;
-  min-width: 346px;
+  min-width: 333px;
   box-sizing: content-box;
 
   text-align: left;
@@ -959,12 +983,16 @@ a {
 
   margin-right: 20px;
 }
+.search-form-field-label-second {
+  margin-right: 18px;
+}
 
 .search-form-field-label-short {
-  margin-right:40px;
+  margin-right:38px;
 }
 
 .search-form-field-label-short-second {
+  margin-right: 27px;
   margin-left: 53px;
 }
 
@@ -990,9 +1018,9 @@ a {
   right: 0;
   bottom: 0;
   padding-top: 36px;
-  padding-right: 101px;
+  padding-right: 102px;
   padding-bottom: 36px;
-  padding-left: 117px;
+  padding-left: 131px;
 
   margin-top: 30px;
 
@@ -1005,6 +1033,10 @@ a {
     margin-top: 0;
 }
 
+.footer-subtitle {
+  margin: 0;
+}
+
 .social-networks {
   list-style: none;
 
@@ -1013,6 +1045,7 @@ a {
   align-items: center;
 
   padding: 0;
+  margin: 0;
 }
 
 .social-button {
@@ -1042,7 +1075,9 @@ a {
 }
 
 .footer-text {
+  margin-top: 0px;
   margin-right: 8px;
+  margin-bottom: 0px;
 }
 
 .visually-hidden {
