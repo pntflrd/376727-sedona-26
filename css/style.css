@@ -42,7 +42,6 @@ a {
   margin: 0 auto;
 
   width: 1200px;
-  min-width: 1200px;
   min-height: 56px;
 
   background-color: #ffffff;
@@ -175,6 +174,7 @@ a {
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 
 .features-item {
@@ -232,9 +232,9 @@ a {
 
 .features-item-short {
   padding-top: 43px;
-  padding-right: 59px;
+  padding-right: 60px;
   padding-bottom: 45px;
-  padding-left: 59px;
+  padding-left: 60px;
 }
 
 .features-img-wrap {
@@ -247,10 +247,6 @@ a {
 .features-subitem {
   padding: 0;
   text-align: center;
-}
-
-.features-list {
-  margin: 0;
 }
 
 .features-list-subitem-list {
@@ -276,10 +272,6 @@ a {
 
 .features-subitem-icon {
   margin-bottom: 30px;
-}
-
-.features-subitem-text {
-
 }
 
 /* Стили для формы */
@@ -362,23 +354,6 @@ a {
   background-color: #503e33;
 }
 
-.button-transparent {
-  font: inherit;
-
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
-
-  border: 2px solid #ffffff;
-}
-
-.button-transparent:hover {
-  color: #000000;
-
-  background-color: #ffffff;
-  border: none;
-}
-
 .form-button {
   font-family: inherit;
   font-size: 21px;
@@ -439,9 +414,9 @@ a {
   text-transform: uppercase;
 
   padding-top: 30px;
-  padding-right: 125px;
+  padding-right: 140px;
   padding-bottom: 30px;
-  padding-left: 125px;
+  padding-left: 140px;
 
   font-size: 21px;
 
@@ -456,9 +431,9 @@ a {
   text-transform: uppercase;
 
   padding-top: 30px;
-  padding-right: 125px;
+  padding-right: 140px;
   padding-bottom: 30px;
-  padding-left: 125px;
+  padding-left: 140px;
 
   background-color: #604E43;
 }
@@ -478,12 +453,214 @@ a {
   background-color: #503E33;
 }
 
-.social-button {
-  width: 46;
-  height: 48;
+/* Стили для фильтра выбора жилья */
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: content-box;
+
+  height: 217px;
+  position:relative;
+  background-image: url(../img/filter-background.jpg);
+  background-repeat: no-repeat,no-repeat, no-repeat;
+  background-size: 1200px, 217px;
+  background-position: bottom, center;
 }
 
-/* Стили для фильтра выбора жилья */
+.search-filter-fieldset-type {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+
+}
+
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+
+  padding-top: 26px;
+  padding-right: 72px;
+  padding-bottom: 31px;
+  padding-left: 72px;
+}
+
+.search-filter-list {
+  box-sizing: content-box;
+  list-style: none;
+  border: none;
+
+  max-width: 140px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.search-list-item {
+    text-decoration: none;
+}
+
+.search-filter-fieldset {
+  border-bottom: none;
+  max-width: 140px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.search-filter-list-item {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+
+.search-filter-range {
+  width: 330px;
+  margin: 50px auto;
+  box-sizing: content-box;
+
+  color: #ffffff;
+  text-transform: uppercase;
+
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.search-filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.button-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 
 .list-item  {
   font-size: 14px;
@@ -500,13 +677,17 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  order: 3;
+  flex-wrap: wrap;
+  max-width: 258px;
+
+  margin-right: 522px;
 }
 
 .search-results-list-item-hotel-description-text {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+
 }
 
 .catalog-item-name {
@@ -516,8 +697,8 @@ a {
 
   text-align: left;
   margin-top: 0;
+  margin-bottom: 5px;
   color: #000000;
-  order: 2;
 }
 
 .catalog-item-name:hover {
@@ -530,56 +711,46 @@ a {
 }
 
 .catalog-item-rating {
+  box-sizing: content-box;
   color: #666666;
 
   background-color: #f2f2f2;
-  padding: 6px 16px 6px 16px;
+  padding: 6px 13px 6px 13px;
 
-  order: 8;
-}
-
-.search-results-list-item-image {
-  order: 1;
+  margin: 0;
 }
 
 .list-item-type {
-  margin: 0;
-  order: 3;
-  float: left;
+  margin-top: 0;
+  margin-right: 38px;
+  margin-bottom: 10px;
+  margin-left: 0;
 }
 
 .catalog-item-price {
-  order: 4;
   margin: 0;
 }
 
 .search-results-list-item-button {
-  order: 5;
-
   padding-top: 16px;
   padding-right: 3px;
   padding-bottom: 16px;
   padding-left: 3px;
-
-  margin-right: 6px;
 }
 
 .search-results-list-item-button-secondary {
-  order: 6;
+  margin-right: 5px;
 }
 
 .catalog-item-rating-in-stars {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  height: 17px;
+  background-image: url(../img/star.svg);
 
-  background-image: url(..img/star.png);
   background-repeat: repeat-x;
-  background-repeat: space;
+  background-size: 22px 17px;
 
   margin: 0;
-
-  order: 7;
+  margin-bottom: 47px;
 }
 
 .catalog-item-rating-in-stars-four {
@@ -594,18 +765,16 @@ a {
     width: 42px;
 }
 
-.search-results-list-item-rating {
+.search-results-list-item-hotel-rating {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
   box-sizing: content-box;
+  max-width: 110px;
   margin: 0;
-  order: 8;
-}
 
-.search-results {
-
+  margin: 0;
 }
 
 .search-results-output {
@@ -681,21 +850,19 @@ a {
 
 .search-results-list-item {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   box-sizing: content-box;
-  margin-top: 30px;
-  margin-right: 72px;
-  margin-bottom: 30px;
-  margin-left: 72px;
+  padding-top: 30px;
+  padding-right: 72px;
+  padding-bottom: 30px;
+  padding-left: 72px;
 
   border-bottom: 1px solid #E5E5E5;
 }
 
 .search-results-list-item-image {
-  margin-right: 78px;
-  order: 1;
+  margin-right: 30px;
 }
 
 .search-results-list-item-button,
@@ -711,12 +878,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-content: flex-start;
+  align-items: flex-start;
   box-sizing: content-box;
-  width: 568px;
-  height: 395px;
+  max-width: 568px;
+  max-height: 395px;
   top: 2169px;
-  left: 316px;
+  left: 349px;
+  right: 349px;
 
   z-index: 2;
 
@@ -724,6 +892,7 @@ a {
   padding-right: 55px;
   padding-bottom: 55px;
   padding-left: 55px;
+
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
@@ -834,9 +1003,11 @@ a {
 
   background-color: rgba(255,255,255, 0.9);
 }
+
 .footer-content-inner {
-  position: ;
+    position: static;
     background-color: rgba(255,255,255, 1);
+    margin-top: 0;
 }
 
 .social-networks {
