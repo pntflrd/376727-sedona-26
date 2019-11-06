@@ -1115,6 +1115,16 @@ a {
 .search-form-field-input-long:-ms-input-placeholder { color: #000000; text-transform: uppercase }
 .search-form-field-input-long:-o-input-placeholder { color: #000000; text-transform: uppercase }
 
+.search-form-field-input-long:active {
+  height: 34px;
+  min-width: 328px;
+
+  background-color: #ffffff;
+  border: 2px #e5e5e5 solid;
+
+  padding-left: 11px;
+}
+
 .search-form-field-input-short {
   height: 38px;
   width: 38px;
